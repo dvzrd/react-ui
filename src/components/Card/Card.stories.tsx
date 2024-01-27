@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import React from 'react';
+import * as React from 'react';
 
 import { Card, CardHeader, CardFooter, CardTitle, CardDescription, CardContent, CardProps } from '@/components/Card';
 
@@ -30,6 +30,7 @@ type Story = StoryObj<typeof Card>;
 
 // Default Story
 export const Default: Story = {
+  args: {},
   render: (args: CardProps) => (
     <Card {...args}>
       <CardHeader>
@@ -45,22 +46,21 @@ export const Default: Story = {
       </CardFooter>
     </Card>
   ),
-  args: {},
 };
 
 // Variant Stories
 export const Destructive: Story = {
-  render: (args: CardProps) => Default.render(args),
   args: {
     variant: 'destructive',
   },
+  render: (args: CardProps) => Default.render(args),
 };
 
 export const Secondary: Story = {
-  render: (args: CardProps) => Default.render(args),
   args: {
     variant: 'secondary',
   },
+  render: (args: CardProps) => Default.render(args),
 };
 
 export const Ghost: Story = {
@@ -72,15 +72,15 @@ export const Ghost: Story = {
 
 // Size Stories
 export const SmallSize: Story = {
-  render: (args: CardProps) => Default.render(args),
   args: {
     size: 'sm',
   },
+  render: (args: CardProps) => Default.render(args),
 };
 
 export const LargeSize: Story = {
-  render: (args: CardProps) => Default.render(args),
   args: {
     size: 'lg',
   },
+  render: (args: CardProps) => Default.render(args),
 };

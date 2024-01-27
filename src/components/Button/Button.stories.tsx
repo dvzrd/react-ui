@@ -1,7 +1,7 @@
 import { Meta, StoryObj } from '@storybook/react';
-import React from 'react';
+import * as React from 'react';
+import { Image, Loader2 } from 'lucide-react';
 
-import { Icon } from '@/components/Icon';
 import { Button, type ButtonProps } from '@/components/Button';
 
 const meta: Meta<typeof Button> = {
@@ -60,6 +60,10 @@ export const Secondary: Story = {
 };
 
 export const LinkAsChild: Story = {
+  args: {
+    asChild: true,
+    variant: 'link',
+  },
   render: (args: ButtonProps) => (
     <Button {...args}>
       <a href="https://withpulp.com" target="_blank" rel="noopener noreferrer">
@@ -67,32 +71,28 @@ export const LinkAsChild: Story = {
       </a>
     </Button>
   ),
-  args: {
-    asChild: true,
-    variant: 'link',
-  },
 };
 
 export const WithLoading: Story = {
-  render: (args: ButtonProps) => (
-    <Button {...args}>
-      <Icon.spinner className="mr-2 h-4 w-4 animate-spin" />
-      Button With Loading
-    </Button>
-  ),
   args: {
     variant: 'outline',
   },
+  render: (args: ButtonProps) => (
+    <Button {...args}>
+      <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+      Button With Loading
+    </Button>
+  ),
 };
 
 export const WithIcon: Story = {
-  render: (args: ButtonProps) => (
-    <Button {...args}>
-      <Icon.media className="mr-2 h-4 w-4" />
-      Button With Icon
-    </Button>
-  ),
   args: {
     variant: 'secondary',
   },
+  render: (args: ButtonProps) => (
+    <Button {...args}>
+      <Image className="mr-2 h-4 w-4" />
+      Button With Icon
+    </Button>
+  ),
 };

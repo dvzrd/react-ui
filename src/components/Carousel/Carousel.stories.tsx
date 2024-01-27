@@ -1,9 +1,8 @@
 import { Meta, StoryObj } from '@storybook/react';
-import React from 'react';
+import * as React from 'react';
 
 import { Card, CardContent } from '@/components/Card';
-
-import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from '.';
+import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from '@/components/Carousel';
 
 const meta: Meta<typeof Carousel> = {
   title: 'Components/Carousel',
@@ -16,6 +15,7 @@ type Story = StoryObj<typeof Carousel>;
 
 // Default Story
 export const Default: Story = {
+  args: {},
   render: () => (
     <Carousel className="w-full max-w-xs mx-auto">
       <CarouselContent>
@@ -35,5 +35,4 @@ export const Default: Story = {
       <CarouselNext />
     </Carousel>
   ),
-  args: {},
 };

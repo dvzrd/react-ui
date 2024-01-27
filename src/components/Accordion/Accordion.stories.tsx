@@ -25,26 +25,25 @@ type Story = StoryObj<typeof Accordion>;
 
 // Default Story
 export const Default: Story = {
-  args: {
-    children: (
-      <>
-        <AccordionItem value="item1">
-          <AccordionTrigger>Accordion Item 1</AccordionTrigger>
-          <AccordionContent>
-            Content for the first item. This is an example of how content can be structured within an accordion.
-          </AccordionContent>
-        </AccordionItem>
-        <AccordionItem value="item2">
-          <AccordionTrigger>Accordion Item 2</AccordionTrigger>
-          <AccordionContent>Content for the second item. Add more details or components as needed.</AccordionContent>
-        </AccordionItem>
-        <AccordionItem value="item3">
-          <AccordionTrigger>Accordion Item 3</AccordionTrigger>
-          <AccordionContent>
-            Content for the third item. You can include any type of content within the accordion.
-          </AccordionContent>
-        </AccordionItem>
-      </>
-    ),
-  },
+  args: {},
+  render: () => (
+    <Accordion type="single">
+      <AccordionItem value="item1">
+        <AccordionTrigger>Accordion Item 1</AccordionTrigger>
+        <AccordionContent>
+          Content for the first item. This is an example of how content can be structured within an accordion.
+        </AccordionContent>
+      </AccordionItem>
+      <AccordionItem value="item2">
+        <AccordionTrigger>Accordion Item 2</AccordionTrigger>
+        <AccordionContent>Content for the second item. Add more details or components as needed.</AccordionContent>
+      </AccordionItem>
+      <AccordionItem value="item3">
+        <AccordionTrigger>Accordion Item 3</AccordionTrigger>
+        <AccordionContent>
+          Content for the third item. You can include any type of content within the accordion.
+        </AccordionContent>
+      </AccordionItem>
+    </Accordion>
+  ),
 };

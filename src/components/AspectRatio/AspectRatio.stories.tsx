@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import React from 'react';
+import * as React from 'react';
 import { AspectRatioProps } from '@radix-ui/react-aspect-ratio';
 
 import { AspectRatio } from '@/components/AspectRatio';
@@ -19,6 +19,7 @@ type Story = StoryObj<typeof AspectRatio>;
 
 // Default Story
 export const Default: Story = {
+  args: {},
   render: (args: AspectRatioProps) => (
     <AspectRatio {...args}>
       <img
@@ -28,5 +29,4 @@ export const Default: Story = {
       />
     </AspectRatio>
   ),
-  args: {},
 };
