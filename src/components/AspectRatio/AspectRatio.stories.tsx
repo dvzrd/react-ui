@@ -7,6 +7,7 @@ import { AspectRatio } from '@/components/AspectRatio';
 const meta: Meta<typeof AspectRatio> = {
   title: 'Components/AspectRatio',
   component: AspectRatio,
+  tags: ['autodocs'],
   args: {
     ratio: 6 / 4,
     className: 'bg-muted',

@@ -9,6 +9,7 @@ const meta: Meta<typeof Accordion> = {
   tags: ['autodocs'],
   argTypes: {
     children: {
+      control: 'disable',
       description: 'Sets the content of the Accordion with React children',
     },
     type: {

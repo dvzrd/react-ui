@@ -9,6 +9,7 @@ const meta: Meta<typeof Card> = {
   tags: ['autodocs'],
   argTypes: {
     children: {
+      control: 'disable',
       description: 'Sets the content of the Card with React children',
     },
     variant: {

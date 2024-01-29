@@ -85,8 +85,6 @@ yarn deploy
 - `yarn eslint:fix`: Runs only the JavaScript linter and fixes automatic fixable issues.
 - `yarn stylelint`: Runs only the style linter.
 - `yarn stylelint:fix`: Runs only the style linter and fixes automatic fixable issues.
-- `yarn check-ui-diff`: Check for updates against the shadcn-ui registry.
-- `yarn check-ui-diff:component`: Check a specific shadcn-ui component for code changes.
 - `yarn check-types`: Runs typescript type checker.
 - `yarn check-types:pretty`: Runs typescript type checker with pretty responses.
 - `yarn ci`: Runs Linting, tests and type checker all together.
@@ -94,6 +92,9 @@ yarn deploy
 - `yarn storybook`: Same as yarn start, to serve storybook.
 - `yarn storybook:build`: Generates the build for storybook in `storybook-static` folder, that can be deployed wherever you need.
 - `yarn storybook:deploy`: Builds and deploys Storybook to GitHub Pages.'
+- `yarn ui:add`: Add a component from the latest shadcn-ui registry.
+- `yarn ui:diff`: Check for updates against the latest shadcn-ui registry.
+- `yarn ui:diff:component`: Check a specific shadcn-ui component for latest code changes.
 - `yarn upgrade`: Upgrade dependencies using yarn upgrade-interactive script
 
 ## Resources

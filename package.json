@@ -26,8 +26,6 @@
     "lint:fix": "yarn eslint:fix && yarn stylelint:fix",
     "eslint": "eslint . --ext .js,.jsx,.tsx,.ts",
     "eslint:fix": "eslint . --ext .js,.jsx,.tsx,.ts --fix",
-    "check-ui-diff": "npx shadcn-ui diff",
-    "check-ui-diff:component": "npx shadcn-ui diff $1",
     "check-types": "tsc --noEmit true",
     "check-types:pretty": "tsc --noEmit --pretty",
     "ci": "yarn lint && yarn test --watch=false",
@@ -36,6 +34,9 @@
     "storybook": "storybook dev -p 6006",
     "storybook:build": "storybook build",
     "storybook:deploy": "yarn storybook:build && touch ./storybook-static/.nojekyll && gh-pages -d ./storybook-static -t true",
+    "ui:add": "npx shadcn-ui@latest add $1",
+    "ui:diff": "npx shadcn-ui diff",
+    "ui:diff:component": "npx shadcn-ui diff $1",
     "upgrade": "yarn upgrade-interactive"
   },
   "peerDependencies": {
@@ -117,5 +118,8 @@
     "vite-plugin-svgr": "^4.2.0",
     "vitest": "^1.2.2"
   },
-  "packageManager": "yarn@3.6.3"
+  "packageManager": "yarn@3.6.3",
+  "dependencies": {
+    "@radix-ui/react-menubar": "^1.0.4"
+  }
 }

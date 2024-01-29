@@ -16,6 +16,7 @@ import {
   UserPlus,
   Users,
 } from 'lucide-react';
+import { DropdownMenuProps } from '@radix-ui/react-dropdown-menu';
 
 import { Button } from '@/components/Button';
 import {
@@ -39,16 +40,60 @@ import {
 const meta: Meta<typeof DropdownMenu> = {
   title: 'Components/DropdownMenu',
   component: DropdownMenu,
+  tags: ['autodocs'],
+  argTypes: {
+    children: {
+      control: 'disable',
+      description: 'Sets the content of the DropdownMenu with React children',
+    },
+    dir: {
+      control: 'select',
+      options: ['ltr', 'rtl'],
+      description: 'Sets the text direction of the DropdownMenu content',
+      table: {
+        defaultValue: { summary: 'ltr' },
+      },
+    },
+    open: {
+      control: 'disable',
+      description: 'Sets whether the DropdownMenu is open',
+      table: {
+        defaultValue: { summary: 'false' },
+      },
+    },
+    defaultOpen: {
+      control: 'disable',
+      description: 'Sets whether the DropdownMenu is open by default',
+      table: {
+        defaultValue: { summary: 'false' },
+      },
+    },
+    modal: {
+      control: 'disable',
+      description: 'Sets whether the DropdownMenu is a modal',
+      table: {
+        defaultValue: { summary: 'false' },
+      },
+    },
+    onOpenChange: {
+      control: 'disable',
+      description: 'Callback for when the DropdownMenu open state changes',
+    },
+  },
 };
 
 export default meta;
 
 type Story = StoryObj<typeof DropdownMenu>;
 
+const defaultArgs: Partial<DropdownMenuProps> = {
+  dir: 'ltr',
+};
+
 export const Default: Story = {
-  args: {},
-  render: () => (
-    <DropdownMenu>
+  args: defaultArgs,
+  render: (args: DropdownMenuProps) => (
+    <DropdownMenu {...args}>
       <DropdownMenuTrigger asChild>
         <Button variant="outline">Open</Button>
       </DropdownMenuTrigger>
@@ -137,15 +182,15 @@ export const Default: Story = {
 };
 
 export const WithCheckboxItems: Story = {
-  args: {},
-  render: () => {
+  args: defaultArgs,
+  render: (args: DropdownMenuProps) => {
     const DropdownMenuWithCheckboxes = () => {
       const [showStatusBar, setShowStatusBar] = React.useState(true);
       const [showActivityBar, setShowActivityBar] = React.useState(false);
       const [showPanel, setShowPanel] = React.useState(false);
 
       return (
-        <DropdownMenu>
+        <DropdownMenu {...args}>
           <DropdownMenuTrigger asChild>
             <Button variant="outline">Open</Button>
           </DropdownMenuTrigger>
@@ -171,13 +216,13 @@ export const WithCheckboxItems: Story = {
 };
 
 export const WithRadioItems: Story = {
-  args: {},
-  render: () => {
+  args: defaultArgs,
+  render: (args: DropdownMenuProps) => {
     const DropdownMenuWithRadioItems = () => {
       const [position, setPosition] = React.useState('bottom');
 
       return (
-        <DropdownMenu>
+        <DropdownMenu {...args}>
           <DropdownMenuTrigger asChild>
             <Button variant="outline">Open</Button>
           </DropdownMenuTrigger>
