@@ -44,7 +44,6 @@ yarn lint:fix
 ## Testing
 
 Testing is done with [Vitest](https://vitest.dev/) and [@testing-library/react](https://testing-library.com/docs/react-testing-library/intro/)
-You can refer to `Button.test.js` as an example.
 
 ```
 yarn test
