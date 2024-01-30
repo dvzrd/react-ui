@@ -29,24 +29,27 @@ export default meta;
 
 type Story = StoryObj<typeof Card>;
 
+// render Card with props
+const render = (args: CardProps) => (
+  <Card {...args}>
+    <CardHeader>
+      <CardTitle>Card Title</CardTitle>
+      <CardDescription>Card description goes here.</CardDescription>
+    </CardHeader>
+    <CardContent>
+      <p>This is the card content</p>
+      <p>You can put whatever in here</p>
+    </CardContent>
+    <CardFooter>
+      <p>Card Footer works the same way</p>
+    </CardFooter>
+  </Card>
+);
+
 // Default Story
 export const Default: Story = {
   args: {},
-  render: (args: CardProps) => (
-    <Card {...args}>
-      <CardHeader>
-        <CardTitle>Card Title</CardTitle>
-        <CardDescription>Card description goes here.</CardDescription>
-      </CardHeader>
-      <CardContent>
-        <p>This is the card content</p>
-        <p>You can put whatever in here</p>
-      </CardContent>
-      <CardFooter>
-        <p>Card Footer works the same way</p>
-      </CardFooter>
-    </Card>
-  ),
+  render,
 };
 
 // Variant Stories
@@ -54,18 +57,18 @@ export const Destructive: Story = {
   args: {
     variant: 'destructive',
   },
-  render: (args: CardProps) => Default.render(args),
+  render,
 };
 
 export const Secondary: Story = {
   args: {
     variant: 'secondary',
   },
-  render: (args: CardProps) => Default.render(args),
+  render,
 };
 
 export const Ghost: Story = {
-  render: (args: CardProps) => Default.render(args),
+  render,
   args: {
     variant: 'ghost',
   },
@@ -76,12 +79,12 @@ export const SmallSize: Story = {
   args: {
     size: 'sm',
   },
-  render: (args: CardProps) => Default.render(args),
+  render,
 };
 
 export const LargeSize: Story = {
   args: {
     size: 'lg',
   },
-  render: (args: CardProps) => Default.render(args),
+  render,
 };
