@@ -16,4 +16,5 @@ export * from './Popover';
 export * from './Progress';
 export * from './Separator';
 export * from './Tabs';
+export * from './Textarea';
 export * from './Tooltip';
