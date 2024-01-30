@@ -1,6 +1,6 @@
 # React UI
 
-React UI is a components library bundled with Rollup.js to commonJs, ES6 Modules, Storybook, Tailwind CSS, Shadcn UI.
+React UI is a component library bundled with Rollup.js to commonJs, ES6 Modules, Storybook, Tailwind CSS, Shadcn UI.
 
 This project is a clone of [Shared](https://github.com/behzadam/shared) and has been updated for personal use.
 
@@ -23,9 +23,7 @@ yarn start
 This will build a version of your library, run the watcher and also run Storybook.
 To open Storybook manually open your Browser and navigate to [http://localhost:6060](http://localhost:6060).
 Start developing your components in `src/components` folder and update the `src/index.js` file accordingly.
-Always provide an `YourComponent.story.tsx` file, so your component will show up in Storybook.
-
-You can refer to example `Button` component, but I think you'll get the idea.
+Always provide an `YourComponent.stories.tsx` file, so your component will show up in Storybook.
 
 ## Linting and Code formating for Typescript
 
