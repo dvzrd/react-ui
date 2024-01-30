@@ -18,6 +18,7 @@ export * from './Progress';
 export * from './RadioGroup';
 export * from './Select';
 export * from './Separator';
+export * from './Switch';
 export * from './Tabs';
 export * from './Textarea';
 export * from './Tooltip';
