@@ -8,3 +8,4 @@ export * from './Dialog';
 export * from './DropdownMenu';
 export * from './Menubar';
 export * from './NavigationMenu';
+export * from './Pagination';
