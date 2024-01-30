@@ -12,3 +12,4 @@ export * from './Pagination';
 export * from './Popover';
 export * from './Progress';
 export * from './Separator';
+export * from './Tabs';
