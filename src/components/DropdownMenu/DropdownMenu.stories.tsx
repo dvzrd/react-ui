@@ -42,10 +42,6 @@ const meta: Meta<typeof DropdownMenu> = {
   component: DropdownMenu,
   tags: ['autodocs'],
   argTypes: {
-    children: {
-      control: 'disable',
-      description: 'Sets the content of the DropdownMenu with React children',
-    },
     dir: {
       control: 'select',
       options: ['ltr', 'rtl'],
