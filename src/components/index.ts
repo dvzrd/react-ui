@@ -7,6 +7,7 @@ export * from './Carousel';
 export * from './Dialog';
 export * from './DropdownMenu';
 export * from './Form';
+export * from './Input';
 export * from './Label';
 export * from './Menubar';
 export * from './NavigationMenu';
