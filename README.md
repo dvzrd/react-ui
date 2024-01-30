@@ -92,9 +92,7 @@ yarn deploy
 - `yarn storybook`: Same as yarn start, to serve storybook.
 - `yarn storybook:build`: Generates the build for storybook in `storybook-static` folder, that can be deployed wherever you need.
 - `yarn storybook:deploy`: Builds and deploys Storybook to GitHub Pages.'
-- `yarn ui:add`: Add a component from the latest shadcn-ui registry.
 - `yarn ui:diff`: Check for updates against the latest shadcn-ui registry.
-- `yarn ui:diff:component`: Check a specific shadcn-ui component for latest code changes.
 - `yarn upgrade`: Upgrade dependencies using yarn upgrade-interactive script
 
 ## Resources

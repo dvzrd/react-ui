@@ -129,7 +129,7 @@ ListItem.displayName = 'ListItem';
 export const Default: Story = {
   args: defaultArgs,
   render: (args: NavigationMenuProps) => (
-    <div className="py-4 min-h-[420px]">
+    <div className="min-h-[380px]">
       <NavigationMenu {...args}>
         <NavigationMenuList>
           <NavigationMenuItem>
