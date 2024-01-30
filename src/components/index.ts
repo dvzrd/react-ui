@@ -4,6 +4,7 @@ export * from './Avatar';
 export * from './Button';
 export * from './Card';
 export * from './Carousel';
+export * from './Dialog';
 export * from './DropdownMenu';
 export * from './Menubar';
 export * from './NavigationMenu';
