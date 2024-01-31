@@ -1,6 +1,6 @@
-# React UI
+# The Chad React UI
 
-React UI is a component library bundled with Rollup.js to commonJs, ES6 Modules, Storybook, Tailwind CSS, Shadcn UI.
+A React UI component library bundled with Rollup.js to commonJs, ES6 Modules, Storybook, Tailwind CSS, and Shadcn UI.
 
 This project is a clone of [Shared](https://github.com/behzadam/shared) and has been updated for personal use.
 

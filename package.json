@@ -1,7 +1,7 @@
 {
-  "name": "react-ui",
+  "name": "chad-ui",
   "version": "1.0.0",
-  "description": "React UI components library built with Rollup, TailwindCSS, Shadcn/UI",
+  "description": "A React UI component library bundled with Rollup.js to commonJs, ES6 Modules, Storybook, Tailwind CSS, and Shadcn UI.",
   "author": "Damir Vazgird",
   "license": "MIT",
   "repository": {
@@ -10,7 +10,7 @@
   },
   "homepage": "https://github.com/dvzrd/react-ui.git",
   "publishConfig": {
-    "dvzrd:registry": "https://npm.pkg.github.com/dvzrd"
+    "registry": "https://registry.npmjs.org/"
   },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",

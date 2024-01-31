@@ -23,7 +23,7 @@ postcss*
 prettier*
 rollup*
 vit*
-setupTests.*
+tests.config.*
 
 config.gypi
 CVS
