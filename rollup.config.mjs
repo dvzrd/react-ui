@@ -4,6 +4,7 @@ import commonjs from '@rollup/plugin-commonjs';
 import typescript from '@rollup/plugin-typescript';
 import url from '@rollup/plugin-url';
 import svgr from '@svgr/rollup';
+import copy from 'rollup-plugin-copy';
 import external from 'rollup-plugin-peer-deps-external';
 import postcss from 'rollup-plugin-postcss';
 import dts from 'rollup-plugin-dts';
@@ -34,6 +35,12 @@ export default [
       postcss({
         plugins: [],
         minimize: true,
+      }),
+      copy({
+        targets: [
+          { src: './tailwind.config.js', dest: 'dist' },
+          { src: './src/styles/tailwind.css', dest: 'dist/styles' },
+        ],
       }),
       external({ includeDependencies: true }),
       resolve(),
