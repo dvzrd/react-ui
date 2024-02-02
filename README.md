@@ -4,7 +4,7 @@ A React UI component library bundled with Rollup.js to commonJs, ES6 Modules, St
 
 This project is a clone of [Shared](https://github.com/behzadam/shared) and has been updated for personal use.
 
-## Usage
+## Setup
 
 This section will cover how to use the library in your own project.
 
@@ -89,6 +89,37 @@ export default {
     --primary-foreground: 83 100% 50%;
 }
 
+```
+
+If you need more control over your stylesheets, you can access all of the stylesheets used by chad-ui:
+
+```
+@import 'chad-ui/dist/styles/themes.css';
+@import 'chad-ui/dist/styles/globals.css';
+
+@import './libs/some-lib.css'
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --primary: 83 100% 50%;
+    --primary-foreground: 54 50% 3%;
+}
+
+.dark {
+    --primary: 54 50% 3%;
+    --primary-foreground: 83 100% 50%;
+}
+
+@layer base {
+    header,
+    footer {
+        @apply
+            min-height: 25vh;
+    }
+}
 ```
 
 3. Import your tailwind styles
