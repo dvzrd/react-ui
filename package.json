@@ -1,6 +1,6 @@
 {
   "name": "chad-ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A React UI component library bundled with Rollup.js to commonJs, ES6 Modules, Storybook, Tailwind CSS, and Shadcn UI.",
   "author": "Damir Vazgird",
   "license": "MIT",
