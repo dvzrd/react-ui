@@ -37,10 +37,7 @@ export default [
         minimize: true,
       }),
       copy({
-        targets: [
-          { src: './tailwind.config.js', dest: 'dist' },
-          { src: './src/styles', dest: 'dist' },
-        ],
+        targets: [{ src: './src/styles', dest: 'dist' }],
       }),
       external({ includeDependencies: true }),
       resolve(),
