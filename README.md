@@ -30,19 +30,19 @@ Here's a list of all the peer dependencies this package relies on:
 
 You can use whatever package management library, but I'll be using yarn for this example.
 
-1. Install the package as a dependency
+#### 1. Install the package as a dependency
 
 ```
 yarn add chad-ui 
 ```
 
-2. Install other necessary dependencies:
+#### 2. Install other necessary dependencies:
 
 ```
 yarn add class-variance-authority clsx lucide-react react react-dom react-hook-form tailwind-merge
 ```
 
-These should be added as dev dependencies:
+These can be added as dev dependencies:
 
 ```
 yarn add -D tailwindcss-animate tailwindcss
@@ -54,7 +54,7 @@ You will need to configure tailwind with chad-ui to be able to use the ui compon
 
 While testing the library in development, I used this: [ReactJS Vite TailwindCSS Boilerplate](https://github.com/joaopaulomoraes/reactjs-vite-tailwindcss-boilerplate), and had no issues. Now, then to configure tailwind with chad-ui:
 
-1. Create or update your tailwind.config.js file in the root of your project's dir.
+#### 1. Create or update your tailwind.config.js file in the root of your project's dir.
 
 ```
 import defaultConfig from 'chad-ui/tailwind.config'
@@ -74,7 +74,7 @@ export default {
 }
 ```
 
-2. Create or update your main stylesheet
+#### 2. Create or update your main stylesheet
 
 ```
 @import 'chad-ui/dist/styles/tailwind.css';
@@ -122,7 +122,7 @@ If you need more control over your stylesheets, you can access all of the styles
 }
 ```
 
-3. Import your tailwind styles
+#### 3. Import your tailwind styles
 
 Inside of `src/index.tsx`, add an import to your stylesheet:
 
@@ -130,7 +130,7 @@ Inside of `src/index.tsx`, add an import to your stylesheet:
 import 'styles/main.css'
 ```
 
-4. Use your Chad-UI components
+#### 4. Use your Chad-UI components
 
 Inside of `src/components/App.tsx`, import the Button component:
 
@@ -218,10 +218,11 @@ You can also import it into your own stylesheet like this:
 
 ```
 @import 'chad-ui/dist/styles/themes.css';
-
 ```
 
 ### Globals
+
+These are some preset global styles that make use of the theme
 
 ```
 @layer base {
