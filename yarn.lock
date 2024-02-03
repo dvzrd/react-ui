@@ -5403,14 +5403,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:^18.2.51":
-  version: 18.2.51
-  resolution: "@types/react@npm:18.2.51"
+"@types/react@npm:^18.2.52":
+  version: 18.2.52
+  resolution: "@types/react@npm:18.2.52"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: 1ab49e51e6314cefb9a162e9ac3a15a0474c82a0737f12f3a9628ccba555ab6645d2449152e7a5fc3ff650a7139a4718715af2c5ae9bc46b0533e98036706f84
+  checksum: 4abc9bd63879e57c3df43a9cacff54c079e21b61ef934d33801e0177c26f582aa7d1d88a0769a740a4fd273168e3b150ff61de23e0fa85d1070e82ddce2b7fd2
   languageName: node
   linkType: hard
 
@@ -6642,7 +6642,7 @@ __metadata:
     "@testing-library/react": ^14.2.1
     "@testing-library/user-event": ^14.5.2
     "@types/node": ^20.11.16
-    "@types/react": ^18.2.51
+    "@types/react": ^18.2.52
     "@types/react-dom": ^18.2.18
     "@typescript-eslint/eslint-plugin": ^6.20.0
     "@typescript-eslint/parser": ^6.20.0
@@ -6662,7 +6662,7 @@ __metadata:
     eslint-plugin-storybook: ^0.6.15
     gh-pages: ^6.1.1
     jsdom: ^24.0.0
-    lucide-react: latest
+    lucide-react: ^0.321.0
     postcss: ^8.4.33
     prettier: 3.2.4
     react: ^18.2.0
@@ -6689,7 +6689,7 @@ __metadata:
   peerDependencies:
     class-variance-authority: ^0.7.0
     clsx: ^2.1.0
-    lucide-react: "*"
+    lucide-react: ^0.321.0
     react: ^18.2.0
     react-dom: ^18.2.0
     react-hook-form: ^7.49.3
@@ -10770,7 +10770,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lucide-react@npm:latest":
+"lucide-react@npm:^0.321.0":
   version: 0.321.0
   resolution: "lucide-react@npm:0.321.0"
   peerDependencies:
