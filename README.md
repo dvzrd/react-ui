@@ -2,8 +2,6 @@
 
 A React UI component library bundled with Rollup.js to commonJs, ES6 Modules, Storybook, Tailwind CSS, and Shadcn UI.
 
-This project is a clone of [Shared](https://github.com/behzadam/shared) and has been updated for personal use.
-
 ## Setup
 
 This section will cover how to use the library in your own project.
@@ -329,6 +327,12 @@ yarn deploy
 
 ### Resources
 
+### Design System
+
+- [Shadcn UI](https://ui.shadcn.com/)
+- [Tailwind Variants](https://www.tailwind-variants.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+
 #### Bundler
 
 - [Rollup.js](https://rollupjs.org/guide/en)
@@ -358,3 +362,7 @@ yarn deploy
 #### Compiler
 
 - [Typescript](https://www.typescriptlang.org/)
+
+### Kudos
+
+This project was initiated by cloning [Shared](https://github.com/behzadam/shared).
