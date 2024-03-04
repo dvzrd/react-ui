@@ -327,7 +327,7 @@ yarn deploy
 
 ### Resources
 
-### Design System
+#### Design System
 
 - [Shadcn UI](https://ui.shadcn.com/)
 - [Tailwind Variants](https://www.tailwind-variants.org/)
