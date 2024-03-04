@@ -16,15 +16,15 @@ The reason these are required is because most of these components are created us
 
 Here's a list of all the peer dependencies this package relies on:
 
-- `class-variance-authority@^0.7.0`
-- `clsx@^2.1.0`
 - `lucide-react@0.312.0`
 - `react@^18.2.0`
 - `react-dom@^18.2.0"`
 - `react-hook-form@^7.49.3`
-- `tailwind-merge@^2.2.0`
+- `tailwind-variants@^0.2.0`
 - `tailwindcss-animate@^1.0.7`
 - `tailwindcss@^3.4.1`
+
+**Note: As of v1.1.0, `clsx`, `cva`, and `twMerge` are replaced by `tv`.**
 
 ### Installing Dependencies
 
@@ -39,7 +39,7 @@ yarn add chad-ui
 #### 2. Install other necessary dependencies:
 
 ```
-yarn add class-variance-authority clsx lucide-react react react-dom react-hook-form tailwind-merge
+yarn add lucide-react react react-dom react-hook-form tailwind-variants
 ```
 
 These can be added as dev dependencies:

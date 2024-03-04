@@ -2,6 +2,7 @@ import { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
 import { NavigationMenuProps } from '@radix-ui/react-navigation-menu';
 import { Github } from 'lucide-react';
+import { tv } from 'tailwind-variants';
 
 import {
   NavigationMenu,
@@ -9,10 +10,10 @@ import {
   NavigationMenuItem,
   NavigationMenuTrigger,
   NavigationMenuContent,
+  NavigationMenuIndicator,
   NavigationMenuLink,
-  navigationMenuTriggerStyles,
+  navigationMenuTrigger,
 } from '@/components/NavigationMenu';
-import { cn } from '@/utils';
 
 const meta: Meta<typeof NavigationMenu> = {
   title: 'Components/NavigationMenu',
@@ -105,18 +106,15 @@ const components: { title: string; href: string; description: string }[] = [
   },
 ];
 
+const listItem = tv({
+  base: 'block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground',
+});
+
 const ListItem = React.forwardRef<React.ElementRef<'a'>, React.ComponentPropsWithoutRef<'a'>>(
   ({ className, title, children, ...props }, ref) => (
     <li>
       <NavigationMenuLink asChild>
-        <a
-          ref={ref}
-          className={cn(
-            'block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground',
-            className,
-          )}
-          {...props}
-        >
+        <a ref={ref} className={listItem({ className })} {...props}>
           <div className="text-sm font-medium leading-none">{title}</div>
           <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">{children}</p>
         </a>
@@ -178,12 +176,13 @@ export const Default: Story = {
             <NavigationMenuLink asChild>
               <a
                 href="http://localhost:6006/?path=/docs/components-navigationmenu--docs"
-                className={navigationMenuTriggerStyles()}
+                className={navigationMenuTrigger()}
               >
                 Documentation
               </a>
             </NavigationMenuLink>
           </NavigationMenuItem>
+          <NavigationMenuIndicator />
         </NavigationMenuList>
       </NavigationMenu>
     </div>
